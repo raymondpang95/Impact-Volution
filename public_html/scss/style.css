@@ -1,0 +1,150 @@
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%;
+}
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%;
+}
+
+.carousel .carousel-inner {
+  height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 100%;
+}
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top-nav-collapse {
+  background-color: #1c2331;
+}
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1c2331;
+  }
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1c2331;
+}
+
+.abc {
+  border: solid;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.scene {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.scene .cardSixSigma {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.scene .cardSixSigma .card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scene .cardSixSigma .card__face--front {
+  border-radius: 8px;
+}
+
+.scene .cardSixSigma .card__face--back {
+  border-radius: 8px;
+  background: #fcfcfb;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.scene .cardSixSigma .card__face--back h4 {
+  color: #1f365c;
+}
+
+.scene .cardSixSigma .greenCard {
+  background-color: #01c476;
+}
+
+.scene .cardSixSigma .blackCard {
+  background-color: #221e1f;
+}
+
+.scene .cardSixSigma:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.scene .cardSixSigma.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.sixSigmaDesc .content .card {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .sixSigmaDesc .content .card {
+    width: 100%;
+  }
+}
+
+.navHoverEffect:hover {
+  color: #d50000 !important;
+  background-color: white;
+}
+
+.impactbgfocusNew {
+  font-weight: 700;
+  color: white;
+  background-color: #d50000;
+  border: solid 1px #d50000;
+}
+
+.impactbgfocusNew:hover {
+  color: #d50000;
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
