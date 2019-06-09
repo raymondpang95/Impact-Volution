@@ -1,2 +1,2 @@
-$('#header').load('/shared/header.html');
-$('#footer').load('/shared/footer.html');
+$('#header').load('js/shared/header.html');
+$('#footer').load('js/shared/footer.html');
